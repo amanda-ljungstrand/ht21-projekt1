@@ -1,0 +1,46 @@
+#wrapper {
+    display: grid;
+    width: 100vw;
+    border: solid 2px red;
+    min-height: 100vw;
+    grid-template-areas: 
+    'as hd hd hd'
+    'as mn mn mn'
+    'as bo ma dr'
+    'as ka ka ka';
+}
+
+header {
+    grid-area: hd;
+    background-color: orange;
+}
+
+aside {
+    grid-area: as;
+    background-color: rgb(255, 208, 122);
+}
+
+main {
+    grid-area: mn;
+    background-color: palegoldenrod;
+}
+
+#boka {
+    grid-area: bo;
+    background-color: palegreen;
+}
+
+#mat {
+    grid-area: ma;
+    background-color: paleturquoise;
+}
+
+#dr {
+    grid-area: dr;
+    background-color: rgb(201, 151, 250);
+}
+
+#karta {
+    grid-area: ka;
+    background-color: rgb(104, 189, 189);
+}
