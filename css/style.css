@@ -3,45 +3,86 @@
     width: 100vw;
     border: solid 2px red;
     min-height: 100vw;
+    background-color: blanchedalmond;
     grid-template-areas: 
     'as hd hd hd'
     'as mn mn mn'
+    'as mn mn mn'
+    'as mn mn mn'
+    'as mn mn mn'
     'as bo ma dr'
+    'as bo ma dr'
+    'as ka ka ka'
+    'as ka ka ka'
     'as ka ka ka';
 }
 
 header {
     grid-area: hd;
-    background-color: orange;
+    background: orange;
     justify-content: center;
+    width: 80vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xxx-large;
 }
 
-aside {
+aside{
     grid-area: as;
-    background-color: rgb(255, 208, 122);
+    background: rgb(255, 208, 122);
+    height: 100vh;
+    width: 20vw
 }
 
 main {
     grid-area: mn;
-    background-color: palegoldenrod;
+    background: palegoldenrod;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size:x-large
+}
+
+section23 {
+    font-size: large;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #boka {
     grid-area: bo;
-    background-color: palegreen;
+    background: rgb(128, 202, 153);
+    height: 20vh;
 }
 
 #mat {
     grid-area: ma;
-    background-color: paleturquoise;
+    background: paleturquoise;
+    height: 20vh;
 }
 
 #dr {
     grid-area: dr;
-    background-color: rgb(201, 151, 250);
+    background: rgb(201, 151, 250);
+    height: 20vh;
+}
+
+article3{
+    display: flex;
+    
+    justify-content: center;
 }
 
 #karta {
     grid-area: ka;
-    background-color: rgb(104, 189, 189);
+    background: rgb(104, 189, 189);
+    height: 30vh;
 }
