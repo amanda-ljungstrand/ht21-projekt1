@@ -1,7 +1,7 @@
 #wrapper {
     display: grid;
     width: 100vw;
-    min-height: 100vw;
+    min-height: 100vh;
     background-color: blanchedalmond;
     grid-template-areas: 
     'as hd hd hd'
@@ -11,44 +11,44 @@
 }
 
 header {
+    font-family: 'Montserrat', sans-serif;
     grid-area: hd;
     background: orange;
     justify-content: center;
-    width: 70vw;
+    width: auto;
     height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: xxx-large;
-    margin: 15px;
-    margin-right: -10px;
-
+    margin-right: 20px;
+    margin-left: -150px;
 }
 
 aside {
+    font-family: 'Noto Serif', serif;
     grid-area: as;
     display: flex;
     flex-direction: column;
     align-content: space-around;
     gap: 20px;
-    margin-right: 10px;
     font-size: larger;
     background: rgb(255, 208, 122);
     height: 138vh;
     width: 20vw
-    
-
 }
 
 main {
+    font-family: 'Noto Serif', serif;
     grid-area: mn;
     background: palegoldenrod;
     height: 40vh;
     margin-right: 20px;
+    margin-left: -150px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     flex-direction: column;
+    justify-content: space-evenly;
     font-size:xx-large
 }
 
@@ -58,13 +58,16 @@ main {
 
 
 #res {
+    font-family: 'Noto Serif', serif;
     grid-area: bo;
     background: rgb(128, 202, 153);
     height: 30vh;
+    margin-left: -150px;
     margin-top:10px
 }
 
 #mat {
+    font-family: 'Noto Serif', serif;
     grid-area: ma;
     background: paleturquoise;
     height: 30vh;
@@ -72,6 +75,7 @@ main {
 }
 
 #dri {
+    font-family: 'Noto Serif', serif;
     grid-area: dr;
     background: rgb(201, 151, 250);
     height: 30vh;
@@ -82,10 +86,12 @@ main {
 
 
 #karta {
+    font-family: 'Noto Serif', serif;
     display: flex;
     justify-content: center;
     grid-area: ka;
     margin-right: 20px;
+    margin-left: -150px;
     background: rgb(104, 189, 189);
     font-size: large; 
     height: 40vh;
@@ -97,14 +103,12 @@ main {
     width: auto;
     margin: 25px;
     margin-bottom: 0px;
-    
 }
 
 #gs {
     height: 6rem;
     width: auto;
     margin: 10px;
-
 }
 
 #lis{
@@ -115,7 +119,6 @@ main {
 #res{
     height: 30vh;
     width: auto;
-
 }
 
 #dri2{
@@ -137,4 +140,8 @@ main {
     align-items: center;
     justify-content: center;
     color: white;
+}
+
+.linkcolor{
+    color: black;
 }

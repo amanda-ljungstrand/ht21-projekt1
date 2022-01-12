@@ -1,16 +1,20 @@
 #wrapper {
     display: grid;
     width: 100vw;
-    min-height: 100vw;
+    min-height: 100vh;
     background-color: blanchedalmond;
     grid-template-areas: 
-    'as hd hd'
-    'as m1 m2'
-    'as if if'
-    'as gt gt';
+    'as hd'
+    'as gem'
+    'as m'
+    'as if'
+    'as gt';
+    /* grid-template-columns: 40vw 30vw 30vw;
+    grid-template-rows: 25vh 25vh 25vh 25vh; */
 }
 
 header {
+    font-family: 'Montserrat', sans-serif;
     grid-area: hd;
     background: orange;
     justify-content: center;
@@ -22,10 +26,10 @@ header {
     font-size: xxx-large;
     margin: 15px;
     margin-right: -10px;
-
 }
 
 aside {
+    font-family: 'Noto Serif', serif;
     grid-area: as;
     display: flex;
     flex-direction: column;
@@ -34,7 +38,7 @@ aside {
     margin-right: 10px;
     font-size: larger;
     background: rgb(255, 208, 122);
-    height: 100vh;
+    height: 138vh;
     width: 20vw
 }
 
@@ -55,13 +59,19 @@ aside {
     margin: 15px;
 }
 
-#mat1 {
-    grid-area: m1;
-    border: solid 1px rgb(0, 0, 0);
-    height: 250px;
-    width: 250px;
-    background-color: white;
+#gem{
+    font-family: 'Noto Serif', serif;
+    font-size: xx-large;
+    height: 100px;
+}
 
+#mat1 {
+    font-family: 'Noto Serif', serif;
+    grid-area: m;
+    border: solid 1px rgb(0, 0, 0);
+    height: 270px;
+    width: 270px;
+    background-color: white;
     display: flex;
     align-content: space-between;
     flex-wrap: wrap;
@@ -72,60 +82,68 @@ aside {
     height: 200px;
     display: block;
     margin-left: 10px;
-    margin-right: auto;
-    margin-top: -13px;
+    margin-right: auto;    
 }
 
 #t1{
-    padding-right: 10px;
+    padding-right: 15px;
 }
 
 #t2{
-    padding-right: 3px;
+    padding-right: 0px;
 }
 
 #mat2 {
-    grid-area: m2;
+    font-family: 'Noto Serif', serif;
+    grid-area: m;
     border: solid 1px rgb(0, 0, 0);
-    height: 250px;
-    width: 250px;
-    margin-right: 200px;
+    height: 270px;
+    width: 270px;
     background-color: white;
+    margin-left: 300px;
     display: flex;
+    align-content: space-between;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #chips{
     height: 150px;
-    width: 150px;
+    display: block;
+    margin-left: 10px;
     margin-top: 20px;
-    margin-left: 40px;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-}
-
-#info{
-    grid-area: if;
-    border: solid 1px rgb(0, 0, 0);
-    height: 200px;
-    width: 300px;
-}
-
-#gt{
-    grid-area: gt;
-    border: solid 1px rgb(0, 0, 0);
-    height: 100px;
-    width: 300px;
 }
 
 #t3{
-    margin-left: 5px;
+    padding-top: 20px;
+    margin-right: 35px;
 }
 
 #t4{
-    padding-left: 210px;
+    padding-top: 20px;
+    padding-left: 10;
 }
+
+#info{
+    font-family: 'Noto Serif', serif;
+    grid-area: if;
+    height: 70px;
+    width: 500px;
+    font-size: x-large;
+}
+
+#gt{
+    font-family: 'Noto Serif', serif;
+    grid-area: gt;
+    height: 70px;
+    width: 500px;
+    margin-top: 30px;
+}
+
+.linkcolor{
+    color: black;
+}
+
 
 
 
