@@ -1,0 +1,131 @@
+#wrapper {
+    display: grid;
+    width: 100vw;
+    min-height: 100vw;
+    background-color: blanchedalmond;
+    grid-template-areas: 
+    'as hd hd'
+    'as m1 m2'
+    'as if if'
+    'as gt gt';
+}
+
+header {
+    grid-area: hd;
+    background: orange;
+    justify-content: center;
+    width: 70vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xxx-large;
+    margin: 15px;
+    margin-right: -10px;
+
+}
+
+aside {
+    grid-area: as;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    gap: 20px;
+    margin-right: 10px;
+    font-size: larger;
+    background: rgb(255, 208, 122);
+    height: 100vh;
+    width: 20vw
+}
+
+#menu {
+    height: 7rem;
+    width: auto;
+    margin: 25px;
+    margin-bottom: 0px;
+}
+
+#gs {
+    height: 6rem;
+    width: auto;
+    margin: 10px;
+}
+
+#lis{
+    margin: 15px;
+}
+
+#mat1 {
+    grid-area: m1;
+    border: solid 1px rgb(0, 0, 0);
+    height: 250px;
+    width: 250px;
+    background-color: white;
+
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#lasagna{
+    height: 200px;
+    display: block;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: -13px;
+}
+
+#t1{
+    padding-right: 10px;
+}
+
+#t2{
+    padding-right: 3px;
+}
+
+#mat2 {
+    grid-area: m2;
+    border: solid 1px rgb(0, 0, 0);
+    height: 250px;
+    width: 250px;
+    margin-right: 200px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#chips{
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#info{
+    grid-area: if;
+    border: solid 1px rgb(0, 0, 0);
+    height: 200px;
+    width: 300px;
+}
+
+#gt{
+    grid-area: gt;
+    border: solid 1px rgb(0, 0, 0);
+    height: 100px;
+    width: 300px;
+}
+
+#t3{
+    margin-left: 5px;
+}
+
+#t4{
+    padding-left: 210px;
+}
+
+
+
